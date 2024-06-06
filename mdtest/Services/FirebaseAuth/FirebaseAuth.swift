@@ -84,7 +84,7 @@ class FirebaseAuth: FirebaseAuthProtocol {
     }
     
     func resetPassword(email: String, _ completion: @escaping (Result<Bool, Error>) -> Void) {
-        Auth.auth().sendPasswordReset(withEmail: email) { error in
+        auth.sendPasswordReset(withEmail: email) { error in
             if let error = error {
                 completion(.failure(error))
             } else {
@@ -94,7 +94,7 @@ class FirebaseAuth: FirebaseAuthProtocol {
     }
     
     func getCurrentUser(_ completion: @escaping (Result<User, Error>) -> Void) {
-        guard let currentUser = Auth.auth().currentUser else {
+        guard let currentUser = auth.currentUser else {
             completion(.failure(AuthErrorCode.userNotFound as! Error))
             return
         }
