@@ -19,7 +19,9 @@ enum FirebaseServiceError: Error {
     }
 }
 
-class FirebaseService {    
+class FirebaseService {  
+    static let shared = FirebaseService()
+    
     init() {
         FirebaseApp.configure()
     }

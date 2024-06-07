@@ -7,9 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA4759932C12ACEF00A52A1F /* RegistrationScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4759922C12ACEF00A52A1F /* RegistrationScreenViewModel.swift */; };
+		AA4759952C12B40800A52A1F /* ResetPasswordScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4759942C12B40800A52A1F /* ResetPasswordScreenViewModel.swift */; };
+		AA4759972C12B8D200A52A1F /* HomepageScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4759962C12B8D200A52A1F /* HomepageScreenViewModel.swift */; };
+		AA47599A2C12BEE300A52A1F /* UserFilterCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA4759992C12BEE300A52A1F /* UserFilterCategory.swift */; };
 		AA95C10B2C120BA700555BAE /* FirebaseFirestore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95C10A2C120BA700555BAE /* FirebaseFirestore.swift */; };
 		AA95C10D2C120BF100555BAE /* FirebaseFirestoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95C10C2C120BF100555BAE /* FirebaseFirestoreProtocol.swift */; };
 		AA95C10F2C120D6F00555BAE /* FirestoreServicesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95C10E2C120D6F00555BAE /* FirestoreServicesTests.swift */; };
+		AA95C1132C127E1900555BAE /* LoginScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95C1122C127E1900555BAE /* LoginScreenView.swift */; };
+		AA95C1152C127E2E00555BAE /* RegistrationScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95C1142C127E2E00555BAE /* RegistrationScreenView.swift */; };
+		AA95C1172C127E3B00555BAE /* ResetPasswordScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95C1162C127E3B00555BAE /* ResetPasswordScreenView.swift */; };
+		AA95C1192C127E5500555BAE /* HomepageScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95C1182C127E5500555BAE /* HomepageScreenView.swift */; };
+		AA95C11D2C127EEF00555BAE /* LoginScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95C11C2C127EEF00555BAE /* LoginScreenViewModel.swift */; };
+		AA95C1202C1297B200555BAE /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA95C11F2C1297B200555BAE /* AuthManager.swift */; };
 		AAD113D22C106B1200E437F1 /* mdtestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD113D12C106B1200E437F1 /* mdtestApp.swift */; };
 		AAD113D42C106B1200E437F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD113D32C106B1200E437F1 /* ContentView.swift */; };
 		AAD113D62C106B1300E437F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD113D52C106B1300E437F1 /* Assets.xcassets */; };
@@ -48,9 +58,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA4759922C12ACEF00A52A1F /* RegistrationScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreenViewModel.swift; sourceTree = "<group>"; };
+		AA4759942C12B40800A52A1F /* ResetPasswordScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordScreenViewModel.swift; sourceTree = "<group>"; };
+		AA4759962C12B8D200A52A1F /* HomepageScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageScreenViewModel.swift; sourceTree = "<group>"; };
+		AA4759992C12BEE300A52A1F /* UserFilterCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFilterCategory.swift; sourceTree = "<group>"; };
 		AA95C10A2C120BA700555BAE /* FirebaseFirestore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseFirestore.swift; sourceTree = "<group>"; };
 		AA95C10C2C120BF100555BAE /* FirebaseFirestoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseFirestoreProtocol.swift; sourceTree = "<group>"; };
 		AA95C10E2C120D6F00555BAE /* FirestoreServicesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreServicesTests.swift; sourceTree = "<group>"; };
+		AA95C1122C127E1900555BAE /* LoginScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenView.swift; sourceTree = "<group>"; };
+		AA95C1142C127E2E00555BAE /* RegistrationScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationScreenView.swift; sourceTree = "<group>"; };
+		AA95C1162C127E3B00555BAE /* ResetPasswordScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordScreenView.swift; sourceTree = "<group>"; };
+		AA95C1182C127E5500555BAE /* HomepageScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageScreenView.swift; sourceTree = "<group>"; };
+		AA95C11C2C127EEF00555BAE /* LoginScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewModel.swift; sourceTree = "<group>"; };
+		AA95C11F2C1297B200555BAE /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		AAD113CE2C106B1200E437F1 /* mdtest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mdtest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD113D12C106B1200E437F1 /* mdtestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mdtestApp.swift; sourceTree = "<group>"; };
 		AAD113D32C106B1200E437F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +119,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA4759982C12BEC700A52A1F /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				AA4759992C12BEE300A52A1F /* UserFilterCategory.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		AA95C1092C120B7F00555BAE /* FirebaseFirestore */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +134,36 @@
 				AA95C10A2C120BA700555BAE /* FirebaseFirestore.swift */,
 			);
 			path = FirebaseFirestore;
+			sourceTree = "<group>";
+		};
+		AA95C1102C127DE900555BAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AA95C1122C127E1900555BAE /* LoginScreenView.swift */,
+				AA95C1142C127E2E00555BAE /* RegistrationScreenView.swift */,
+				AA95C1162C127E3B00555BAE /* ResetPasswordScreenView.swift */,
+				AA95C1182C127E5500555BAE /* HomepageScreenView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AA95C1112C127DEF00555BAE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				AA95C11C2C127EEF00555BAE /* LoginScreenViewModel.swift */,
+				AA4759922C12ACEF00A52A1F /* RegistrationScreenViewModel.swift */,
+				AA4759942C12B40800A52A1F /* ResetPasswordScreenViewModel.swift */,
+				AA4759962C12B8D200A52A1F /* HomepageScreenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AA95C11E2C1297A700555BAE /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				AA95C11F2C1297B200555BAE /* AuthManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		AAD113C52C106B1200E437F1 = {
@@ -131,7 +189,10 @@
 		AAD113D02C106B1200E437F1 /* mdtest */ = {
 			isa = PBXGroup;
 			children = (
+				AA4759982C12BEC700A52A1F /* Enum */,
 				AAD1141C2C119A8D00E437F1 /* Models */,
+				AA95C1102C127DE900555BAE /* Views */,
+				AA95C1112C127DEF00555BAE /* ViewModels */,
 				AAD114042C10733E00E437F1 /* Services */,
 				AAD113D12C106B1200E437F1 /* mdtestApp.swift */,
 				AAD113D32C106B1200E437F1 /* ContentView.swift */,
@@ -172,6 +233,7 @@
 		AAD114042C10733E00E437F1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				AA95C11E2C1297A700555BAE /* Manager */,
 				AA95C1092C120B7F00555BAE /* FirebaseFirestore */,
 				AAD1142A2C11DEEB00E437F1 /* FirebaseService */,
 				AAD114212C11B05000E437F1 /* FirebaseAuth */,
@@ -346,12 +408,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA95C10D2C120BF100555BAE /* FirebaseFirestoreProtocol.swift in Sources */,
+				AA95C1152C127E2E00555BAE /* RegistrationScreenView.swift in Sources */,
+				AA4759972C12B8D200A52A1F /* HomepageScreenViewModel.swift in Sources */,
 				AAD114252C11B07D00E437F1 /* FirebaseAuth.swift in Sources */,
 				AA95C10B2C120BA700555BAE /* FirebaseFirestore.swift in Sources */,
+				AA95C1202C1297B200555BAE /* AuthManager.swift in Sources */,
+				AA95C11D2C127EEF00555BAE /* LoginScreenViewModel.swift in Sources */,
+				AA95C1192C127E5500555BAE /* HomepageScreenView.swift in Sources */,
 				AAD114272C11B08900E437F1 /* FirebaseAuthProtocol.swift in Sources */,
+				AA4759932C12ACEF00A52A1F /* RegistrationScreenViewModel.swift in Sources */,
+				AA4759952C12B40800A52A1F /* ResetPasswordScreenViewModel.swift in Sources */,
+				AA47599A2C12BEE300A52A1F /* UserFilterCategory.swift in Sources */,
 				AAD113D42C106B1200E437F1 /* ContentView.swift in Sources */,
 				AAD1142C2C11DF6200E437F1 /* FirebaseService.swift in Sources */,
+				AA95C1172C127E3B00555BAE /* ResetPasswordScreenView.swift in Sources */,
 				AAD1141E2C119AA300E437F1 /* UserModel.swift in Sources */,
+				AA95C1132C127E1900555BAE /* LoginScreenView.swift in Sources */,
 				AAD113D22C106B1200E437F1 /* mdtestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

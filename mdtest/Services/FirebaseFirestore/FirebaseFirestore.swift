@@ -13,6 +13,7 @@ class FirebaseFirestore: FirebaseFirestoreProtocol {
     private let db: Firestore
     
     init(_ _db: Firestore = Firestore.firestore()) {
+        let _ = FirebaseService.shared
         db = _db
     }
     
@@ -28,13 +29,13 @@ class FirebaseFirestore: FirebaseFirestoreProtocol {
                 for document in snapshot.documents {
                     let data = document.data()
                     let user = UserModel(
-                        id: UUID(uuidString: String(describing: data["id"])) ?? UUID(),
-                        name: String(describing: data["name"]),
-                        email: String(describing: data["email"]),
-                        photoURL: String(describing: data["photoURL"]),
-                        isEmailVerified: data["isEmailVerified"] as? Bool ?? false,
-                        createdAt: dateFormatter.date(from: String(describing: data["createdAt"])) ?? Date.now,
-                        updatedAt: dateFormatter.date(from: String(describing: data["updatedAt"])) ?? Date.now
+                        id: UUID(uuidString: String(describing: data["id"]!)) ?? UUID(),
+                        name: String(describing: data["name"]!),
+                        email: String(describing: data["email"]!),
+                        photoURL: String(describing: data["photoURL"]!),
+                        isEmailVerified: data["isEmailVerified"]! as? Bool ?? false,
+                        createdAt: dateFormatter.date(from: String(describing: data["createdAt"]!)) ?? Date.now,
+                        updatedAt: dateFormatter.date(from: String(describing: data["updatedAt"]!)) ?? Date.now
                     )
                     users.append(user)
                 }

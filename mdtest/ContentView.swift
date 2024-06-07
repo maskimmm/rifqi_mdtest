@@ -8,14 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let firebase: FirebaseService = FirebaseService.shared
+    @State private var auth: AuthManager = AuthManager.shared
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if auth.isAuth {
+            HomepageScreenView()
+        } else {
+            LoginScreenView()
         }
-        .padding()
     }
 }
 

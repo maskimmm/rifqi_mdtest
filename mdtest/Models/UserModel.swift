@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct UserModel: Codable, Identifiable {
+struct UserModel: Codable, Identifiable, Hashable {
     var id: UUID = UUID()
     var name: String = String()
     var email: String = String()
@@ -25,6 +25,14 @@ struct UserModel: Codable, Identifiable {
             "isEmailVerified" : isEmailVerified,
             "createdAt" : createdAt,
             "updatedAt" : updatedAt
+        ]
+    }
+    
+    static var dummies: [UserModel] {
+        return [
+            UserModel(name: "John Doe", email: "john@example.com", isEmailVerified: true),
+            UserModel(name: "Ada Lovelace", email: "ada@example.com"),
+            UserModel(name: "Arya Stark", email: "stark@example.com")
         ]
     }
 }
